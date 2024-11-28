@@ -145,7 +145,7 @@ const like_icon = document.querySelectorAll(".like i");
 const heart_popUp = document.querySelectorAll(".image i");
 
 cards.forEach(function(card){
-    card.addEventListener("click",function(e){
+    card.addEventListener("dblclick",function(e){
         if(e.target.tagName === "IMG"){
           heart_popUp[e.target.id].style.opacity = "1";
           heart_popUp[e.target.id].style.transform = `translate(-50%,-50%) scale(0.9)`;
