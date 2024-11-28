@@ -1,0 +1,173 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+html{
+    font-size: clamp(12px,1vw,18px);
+}
+
+main{
+    width: 100%;
+    height: 100%;
+
+    .card{
+        width: 100%;
+        padding-bottom: 1em;
+
+        .card-header{
+            width: 100%;
+            // height: 15vh;
+            // background-color: rgb(95, 85, 85);
+            padding: 0.8em 1em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .left{
+                display: flex;
+                align-items: center;
+                gap: 1em;
+
+                .image{
+                    width: 5em;
+                    height: 5em;
+                    border-radius: 50%;
+                    border: 3px solid rgb(255, 24, 239);
+                    padding: 0.1em;
+                    background-color: #fff;
+
+                    img{
+                        width: 100%;
+                        aspect-ratio: 1/1;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                }
+                .content{
+                    h3{
+                        font-size: 1.4em;
+                        margin-bottom: 0.1em;
+                    }
+                    p{
+                        font-size: 1em;
+                        opacity: 0.8;
+                    }
+                }
+            }
+
+            .right{
+                display: flex;
+                align-items: center;
+                gap: 1em;
+
+                button{
+                    font-size: 1.2em;
+                    font-weight: 600;
+                    padding: 0.4em 1em;
+                    border: none;
+                    background-color: rgb(232, 228, 228);
+                    text-align: center;
+                    border-radius: 0.2em;
+                }
+                i{
+                    rotate: 90deg;
+                    font-size: 2em;
+                }
+            }
+
+        }
+
+        .image{
+            width: 100%;
+            height: 64vh;
+            position: relative;
+
+            img{
+                width: 100%;
+                height: 100%;
+                aspect-ratio: 1/1;
+                object-fit: cover;
+            }
+            i{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                color: white;
+                font-size: 5em;
+                opacity: 0;
+                transition: all linear 0.2s;
+                color: red;
+            }
+        }
+
+        .card-bottom{
+            width: 100%;
+            padding: 1.5em;
+
+            .icon-container{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                // padding: 0 1.5em;
+
+                .left{
+                    display: flex;
+                    align-items: center;
+                    gap: 1.5em;
+
+                    .icon{
+                        display: flex;
+                        align-items: center;
+                        gap: 0.5em;
+
+                        i{
+                            font-size: 2.2em;
+                        }
+                        p{
+                            font-size: 1.2em;
+                            font-weight: 600;
+                        }
+                    }
+                }
+
+                .right{
+                    img{
+                        width: 2.2em;
+                        aspect-ratio: 1/1;
+                    }
+                }
+            }
+
+            .caption{
+                width: 100%;
+                margin-top: 1em;
+                p{
+                    width: 100%;
+                    font-size: 1.4em;
+                    opacity: 0.7;
+                    margin-bottom: 0.2em;
+                }
+            }
+            .time{
+                width: 100%;
+                // margin-top: 0.2em;
+                p{
+                    width: 100%;
+                    font-size: 1.4em;
+                    opacity: 0.7;
+                }
+            }
+
+        }
+    }
+}
