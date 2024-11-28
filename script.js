@@ -153,6 +153,8 @@ cards.forEach(function(card){
             heart_popUp[e.target.id].style.opacity = "0";
           },2000)
           like_icon[e.target.id].style.color = "red";
+          // users[e.target.id].likeCount += 1;
+          // show_data()
         }
     })
 })
